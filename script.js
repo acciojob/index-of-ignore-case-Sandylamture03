@@ -1,11 +1,11 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
-	if (subStr === "") return 0; // Empty substring is always found at index 0
-  if (str === "") return -1;   // Empty string can't contain non-empty substring
+	if (s1 === "") return 0; // Empty substring is always found at index 0
+  if (s2 === "") return -1;   // Empty string can't contain non-empty substring
   
   // Convert both strings to lowercase for case-insensitive comparison
-  const lowerStr = str.toLowerCase();
-  const lowerSubStr = subStr.toLowerCase();
+  const lowerStr = s1.toLowerCase();
+  const lowerSubStr = s2.toLowerCase();
   
   // Use the built-in indexOf method on the lowercase versions
   return lowerStr.indexOf(lowerSubStr);
